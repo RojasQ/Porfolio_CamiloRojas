@@ -1,0 +1,179 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import SocialPill from "../components/SocialPill.astro";
+import LinkedInIcon from "../components/images/LinkedIn.astro";
+import GitIcon from "../components/images/GitHub.astro";
+import EmailIcon from "../components/images/Email.astro";
+---
+
+<Layout title="Portfolio de Camilo Rojas - Desarrollador y Programador Web / Videojuegos">
+	<main>
+		
+		
+		
+		<div class=" waterMark gradient static top-0 w-full static mx-auto lg:w-[840px] flex bg-white pt-5 ">
+
+			<section class="basis-4/6 mr-1 m-2 ">
+
+				<div class="p-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+
+					<img class="block mx-auto h-24 sm:mx-0 " src="Cami.jpg" />
+					<div class="text-center space-y-2 sm:text-left">
+						<div class="space-y-0.5">
+
+						<h1 class="text-xl text-white font-semibold">
+							Camilo Andres Rojas Quevedo
+						</h1>
+						<p class="text-lg text-white font-medium">
+							Multimedia Engineer
+						</p>
+
+						<p class="text-slate-500 font-medium text-slate-50">
+							Programmer focused in Front-End and videogame development.
+						</p>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="w-full mx-auto pb-3 mt-2 rounded-sm" style="background-color: rgba(10, 10, 10, 0.45); ">
+
+					<div class="w-full text-lg px-3 py-1 rounded-sm" style="background-color: rgba(255, 255, 255, 0.3); ">Experience</div>
+
+					<div class="text-ml m-3 mb-1 p-2 rounded-sm " style="background-color: rgba(0, 0, 0, 0.5);">
+
+						<p class="text-sm m-1 ml-0">January 2022 - July 2022</p>
+						<h2 class="text-lg m-1 ml-0 underline underline-offset-4">Front-End Developer - Colgate Palmolive</h2>
+						<p>Planning and development of form-type web pages for inventory management including functions like search, add, delete, and update information in databases.</p>
+						
+						<div class=" w-full mt-3 mb-1 ml-0 flex space-x-3">
+							<p class={` bg-white/5 border dark:border-white/10 rounded-lg
+								flex justify-center items-center gap-x-2
+								py-1 px-1 md:py-1 md:px-3
+								text-sm md:text-base
+								text-cyan/70 dark:text-white
+								border-cyan-500
+								text-cyan-500
+							`}
+							>
+							CSS
+							</p>
+							<p class={` bg-white/5 border dark:border-white/10 rounded-lg
+								flex justify-center items-center gap-x-2
+								py-1 px-1 md:py-1 md:px-3
+								text-sm md:text-base
+								text-cyan/70 dark:text-white
+								border-green-500
+								text-green-500
+							`}
+							>
+							Vue.Js
+							</p>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="w-full mx-auto pb-3 mt-2 rounded-sm " style="background-color: rgba(0, 0, 0, 0.45);">
+
+					<div class="w-full text-lg px-3 py-2 rounded-sm " style="background-color: rgba(255, 255, 255, 0.2);">Proyects</div>
+
+					<div class="text-ml m-3 mb-1 p-2 rounded-sm " style="background-color: rgba(0, 0, 0, 0.5);">
+						<div class="w-full pb-2"> An educational game designe to facilitate the understanding of Object-Oriented Programming (OOP) principles for novice programming students.</div>
+
+						<img class="rounded-sm" src="/ElementalMethod.jpg" alt="">
+
+						<div class=" w-full mt-3 mb-1 ml-0 flex space-x-3 ">
+							<p class={` bg-white/5 border dark:border-white/10 rounded-lg
+								flex justify-center items-center gap-x-2
+								py-1 px-1 md:py-1 md:px-3
+								text-sm md:text-base
+								text-cyan/70 dark:text-white
+								border-white
+								text-white
+								
+							`}
+							>
+							Unity
+							</p>
+							<p class={` bg-white/5 border dark:border-white/10 rounded-lg
+								flex justify-center items-center gap-x-2
+								py-1 px-1 md:py-1 md:px-3
+								text-sm md:text-base
+								text-cyan/70 dark:text-white
+								border-white
+								text-white
+							`}
+							>
+							RFID
+							</p>
+
+							<a
+							class={`
+								bg-white/5 
+								border dark:border-white/10 border-red-500 rounded-full
+								flex justify-center items-center gap-x-2
+								py-1 px-1 md:py-1 md:px-3
+								text-sm md:text-base
+								text-cyan/70 dark:text-white
+								transition
+								hover:scale-110 hover:bg-white/10
+							`}
+							href="https://www.youtube.com/watch?v=8Q_w2JPDQwQ">
+							Youtube Video
+							</a>
+							
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+			<section class="basis-2/6 m-2">
+
+				<div class="w-full mx-auto p-3 pb-0 " >
+
+					<p>Spanish - Native</p>
+					<p>English - B2</p>
+
+					<div class=" w-full mt-3 mb-1 ml-0 flex flex-wrap gap-2">
+						
+						<SocialPill href="https://www.linkedin.com/in/camilo-rojas-quevedo/">
+							<LinkedInIcon class="size-3 md:size-4" />
+							LinkedIn
+						  </SocialPill>
+						<SocialPill href="https://github.com/RojasQ">
+							<GitIcon class="size-4 md:size-5" />
+							GitHub
+						</SocialPill>
+						<SocialPill href="mailto:sncamilorojas@gmail.com">
+							<EmailIcon class="size-4 md:size-5" />
+							Sncamilorojas@gmail.com
+						</SocialPill>
+						
+					</div>
+
+				</div>
+				<div class="w-full mx-auto m-1" style="background-color: rgba(0, 0, 0, 0.45);">
+
+					<div class="w-full text-lg p-2 rounded-sm underline underline-offset-4">About me</div>
+
+					<p class=" p-2">Im a Colombian developer graduated from San Buenaventura University. I enjoy playing videogames and watching series.<br><br> I've participated in GameJams, making small 2D games, I'm really good at teamwork, I'm creative and a patient person.</p>
+
+				</div>
+	
+			</section>
+
+			<img class="absolute top-0 left-0 right-0 -z-10 size-full opacity-40" src="space2.gif" alt="">
+		</div>
+
+		
+
+	</main>
+</Layout>
