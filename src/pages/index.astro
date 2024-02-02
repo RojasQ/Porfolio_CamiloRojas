@@ -2,12 +2,20 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import SocialPill from "../components/SocialPill.astro";
-import LinkedInIcon from "../components/images/LinkedIn.astro";
-import GitIcon from "../components/images/GitHub.astro";
-import EmailIcon from "../components/images/Email.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import GitIcon from "../components/icons/GitHub.astro";
+import EmailIcon from "../components/icons/Email.astro";
+
+interface Props {
+  img: string
+}
+
+const { img } = Astro.props
 ---
 
-<Layout title="Portfolio de Camilo Rojas - Desarrollador y Programador Web / Videojuegos">
+
+
+<Layout title="Camilo Rojas Portfolio - Desarrollador y Programador Web / Videojuegos">
 	<main>
 		
 		
@@ -18,7 +26,8 @@ import EmailIcon from "../components/images/Email.astro";
 
 				<div class="p-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
 
-					<img class="block mx-auto h-24 sm:mx-0 " src="Cami.jpg" />
+					<img class="block mx-auto h-28 sm:mx-0 " src="/images/Cami.webp" alt="ProfileImage"/>
+
 					<div class="text-center space-y-2 sm:text-left">
 						<div class="space-y-0.5">
 
@@ -29,7 +38,7 @@ import EmailIcon from "../components/images/Email.astro";
 							Multimedia Engineer
 						</p>
 
-						<p class="text-slate-500 font-medium text-slate-50">
+						<p class="text-slate-500 font-medium text-white">
 							Programmer focused in Front-End and videogame development.
 						</p>
 
@@ -84,7 +93,7 @@ import EmailIcon from "../components/images/Email.astro";
 					<div class="text-ml m-3 mb-1 p-2 rounded-sm " style="background-color: rgba(0, 0, 0, 0.5);">
 						<div class="w-full pb-2"> An educational game designe to facilitate the understanding of Object-Oriented Programming (OOP) principles for novice programming students.</div>
 
-						<img class="rounded-sm" src="/ElementalMethod.jpg" alt="">
+						<img class="rounded-sm" src="/images/ElementalMethod.webp" alt="">
 
 						<div class=" w-full mt-3 mb-1 ml-0 flex space-x-3 ">
 							<p class={` bg-white/5 border dark:border-white/10 rounded-lg
@@ -170,7 +179,7 @@ import EmailIcon from "../components/images/Email.astro";
 	
 			</section>
 
-			<img class="absolute top-0 left-0 right-0 -z-10 size-full opacity-40" src="space2.gif" alt="">
+			<img class="absolute top-0 left-0 right-0 -z-10 size-full opacity-40" src="/images/space2.gif" alt="">
 		</div>
 
 		
