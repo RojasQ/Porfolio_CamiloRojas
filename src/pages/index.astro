@@ -19,8 +19,11 @@ const { img } = Astro.props
 	<main>
 		
 		
-		
-		<div class=" waterMark gradient static top-0 w-full static mx-auto lg:w-[840px] flex bg-white pt-5 ">
+		<img class="absolute top-0 left-0 right-0 -z-10 size-full opacity-40 static" src="/images/space2.gif" alt="">
+		<div class=" waterMark gradient top-0 w-min relative mx-auto lg:w-[840px] flex bg-white pt-5 ">
+
+			
+			<img class="absolute inset-0 -z-10 opacity-40 static size-full" src="/images/space.gif" alt="">
 
 			<section class="basis-4/6 mr-1 m-2 ">
 
@@ -179,9 +182,9 @@ const { img } = Astro.props
 	
 			</section>
 
-			<img class="absolute top-0 left-0 right-0 -z-10 size-full opacity-40" src="/images/space2.gif" alt="">
 		</div>
-
+		
+		
 		
 
 	</main>
